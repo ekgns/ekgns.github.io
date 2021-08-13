@@ -8,7 +8,7 @@
 # Theme Settings
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
@@ -16,25 +16,25 @@ minimal_mistakes_skin    :  "mint" #"default" "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Let's go up"
-title_separator          : "_"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Kim Dahun"
-description              : "_"
+title                    : "콩 농장"
+#title_separator          : "_"
+subtitle                 :  높게 자라기 위해 노력하는 콩
+name                     : "a field of beans"
+#description              : "_"
 #url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+#baseurl                  : # the subpath of your site, e.g. "/blog"
+#repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+#teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+#logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+#masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+#words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
+#  disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+ # discourse:
+ #   server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
@@ -101,17 +101,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kim Dahun"
+  name             : "Bean"
   avatar           : "/assets/images/mblogthumb-phinf.pstatic.net.png"
-  bio              : "盡人事待天命 <br>내 할 일을 다해보자"
+  bio              : "iOS Dev"
   location         : "한국"
   email            : "ekgns14@naver.com"
-  github           : "https://github.com/ekgns"
-  instagram        : ""
+  github           : "ekgns"
+  instagram        : "d_a__hun/"
+  facebook         : ""
+  twitter          : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+#       url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -123,7 +125,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/ekgns"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -153,7 +155,7 @@ footer:
 
 # Reading Files
 include:
-  - .htaccess
+#  - .htaccess
   - _pages
 exclude:
   - "*.sublime-project"
