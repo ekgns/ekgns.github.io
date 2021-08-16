@@ -1,0 +1,16 @@
+I"E<h3 id="상수--고정-된-수">상수 : 고정 된 수</h3>
+<ul>
+  <li>사용방법 :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. var (이름) : &lt;Type&gt; : 값
+2. var (이름) = 값
+</code></pre></div>    </div>
+  </li>
+  <li>ex)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  var name : String =  Bean
+(변수) (변수이름) : &lt;타입&gt; =  값
+2.  var name2  = Bean
+(변수) (변수 이름) = 값
+</code></pre></div>    </div>
+  </li>
+</ul>
+:ET

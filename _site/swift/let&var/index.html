@@ -1,0 +1,501 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>변수&amp;상수  - 콩 농장</title>
+<meta name="description" content="상수 : 고정 된 수    사용방법 :     1. let (이름) : &lt;Type&gt; : 값 2. let (이름) = 값           ex)     1.  let name : String =  Bean (상수) (상수이름) : &lt;타입&gt; =  값 2.  let name2  = Bean (상수) (상수이름) = 값">
+
+
+  <meta name="author" content="Bean">
+  
+  <meta property="article:author" content="Bean">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="콩 농장">
+<meta property="og:title" content="변수&amp;상수">
+<meta property="og:url" content="/swift/let&var/">
+
+
+  <meta property="og:description" content="상수 : 고정 된 수    사용방법 :     1. let (이름) : &lt;Type&gt; : 값 2. let (이름) = 값           ex)     1.  let name : String =  Bean (상수) (상수이름) : &lt;타입&gt; =  값 2.  let name2  = Bean (상수) (상수이름) = 값">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-08-16T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/swift/let&var/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "a field of beans",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="콩 농장 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          콩 농장
+          <span class="site-subtitle">높게 자라기 위해 노력하는 콩</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="">Swift</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="/">
+        <img src="/assets/images/mblogthumb-phinf.pstatic.net.png" alt="Bean" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/" itemprop="url">Bean</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>iOS Dev</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">한국</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:ekgns14@naver.com" rel="me" class="u-email">
+            <meta itemprop="email" content="ekgns14@naver.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://www.facebook.com/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+            <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/d_a__hun/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/ekgns" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="변수&amp;상수">
+    <meta itemprop="description" content="상수 : 고정 된 수  사용방법 :    1. let (이름) : &lt;Type&gt; : 값2. let (이름) = 값        ex)    1.  let name : String =  Bean(상수) (상수이름) : &lt;타입&gt; =  값2.  let name2  = Bean(상수) (상수이름) = 값      ">
+    <meta itemprop="datePublished" content="2021-08-16T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/swift/let&var/" class="u-url" itemprop="url">변수&amp;상수
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h3 id="상수--고정-된-수">상수 : 고정 된 수</h3>
+<ul>
+  <li>사용방법 :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. let (이름) : &lt;Type&gt; : 값
+2. let (이름) = 값
+</code></pre></div>    </div>
+  </li>
+  <li>ex)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  let name : String =  Bean
+(상수) (상수이름) : &lt;타입&gt; =  값
+2.  let name2  = Bean
+(상수) (상수이름) = 값
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="변수--변화가-가능한-수">변수 : 변화가 가능한 수</h3>
+<ul>
+  <li>
+    <p>사용방법 : var (이름) : <Type> : 값</Type></p>
+  </li>
+  <li>사용방법 :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var (이름) : &lt;Type&gt; : 값
+ 2. var (이름) = 값
+</code></pre></div>    </div>
+  </li>
+  <li>ex)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  var name : String =  Bean
+ (변수) (변수이름) : &lt;타입&gt; =  값
+2.  var name2  = Bean
+ (변수) (변수이름) = 값
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="차이점">차이점</h3>
+<ol>
+  <li>상수는 변경이 되지 않아 값 변경을 할 수 없음</li>
+  <li>변수는 변경이 가능 해 값을 변경 할 수 있어 나중에 값을 넣어도 됨</li>
+</ol>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#swift-%EA%B8%B0%EB%B6%84%EB%AC%B8%EB%B2%95" class="page__taxonomy-item p-category" rel="tag">Swift 기분문법</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#swift" class="page__taxonomy-item p-category" rel="tag">Swift</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-16T00:00:00+09:00">August 16, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EB%B3%80%EC%88%98%26%EC%83%81%EC%88%98+%20%2Fswift%2Flet%26var%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fswift%2Flet%26var%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fswift%2Flet%26var%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 a field of beans. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

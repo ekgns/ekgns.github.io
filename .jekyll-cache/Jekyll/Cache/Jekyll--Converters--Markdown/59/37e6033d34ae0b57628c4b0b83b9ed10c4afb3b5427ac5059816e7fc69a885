@@ -1,0 +1,22 @@
+I"�<h3 id="변수--변화가-가능한-수">변수 : 변화가 가능한 수</h3>
+<ul>
+  <li>사용방법 :
+    <ol>
+      <li>let (이름) : <Type> : 값</Type></li>
+      <li>let (이름) = 값
+ex) 
+—</li>
+      <li>let name : String =  Bean
+상수/ 상수이름 / 타입 = / 값</li>
+      <li>let age  = 20
+/상수 /상수 이름 = / 값</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="상수--고정-된-수">상수 : 고정 된 수</h3>
+<ul>
+  <li>사용방법 : var (이름) : <Type> : 값</Type></li>
+</ul>
+
+:ET

@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-13T18:33:24+09:00</updated><id>/feed.xml</id><title type="html">콩 농장</title><author><name>Bean</name><email>ekgns14@naver.com</email></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-16T15:29:30+09:00</updated><id>/feed.xml</id><title type="html">콩 농장</title><author><name>Bean</name><email>ekgns14@naver.com</email></author><entry><title type="html">변수&amp;amp;상수</title><link href="/swift/let&var/" rel="alternate" type="text/html" title="변수&amp;amp;상수" /><published>2021-08-16T00:00:00+09:00</published><updated>2021-08-16T00:00:00+09:00</updated><id>/swift/let&amp;var</id><content type="html" xml:base="/swift/let&amp;var/">&lt;h3 id=&quot;상수--고정-된-수&quot;&gt;상수 : 고정 된 수&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;사용방법 :
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. let (이름) : &amp;lt;Type&amp;gt; : 값
+2. let (이름) = 값
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex)
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.  let name : String =  Bean
+(상수) (상수이름) : &amp;lt;타입&amp;gt; =  값
+2.  let name2  = Bean
+(상수) (상수이름) = 값
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;변수--변화가-가능한-수&quot;&gt;변수 : 변화가 가능한 수&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;사용방법 : var (이름) : &lt;Type&gt; : 값&lt;/Type&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;사용방법 :
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1. var (이름) : &amp;lt;Type&amp;gt; : 값
+ 2. var (이름) = 값
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex)
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.  var name : String =  Bean
+ (변수) (변수이름) : &amp;lt;타입&amp;gt; =  값
+2.  var name2  = Bean
+ (변수) (변수이름) = 값
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;차이점&quot;&gt;차이점&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;상수는 변경이 되지 않아 값 변경을 할 수 없음&lt;/li&gt;
+  &lt;li&gt;변수는 변경이 가능 해 값을 변경 할 수 있어 나중에 값을 넣어도 됨&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Bean</name><email>ekgns14@naver.com</email></author><category term="Swift" /><category term="Swift 기분문법" /><summary type="html">상수 : 고정 된 수 사용방법 : 1. let (이름) : &amp;lt;Type&amp;gt; : 값 2. let (이름) = 값 ex) 1. let name : String = Bean (상수) (상수이름) : &amp;lt;타입&amp;gt; = 값 2. let name2 = Bean (상수) (상수이름) = 값</summary></entry></feed>
