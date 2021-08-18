@@ -1,0 +1,101 @@
+I"�<h3 id="array--데이터-타입의-값을-순서대로-모은다">Array : 데이터 타입의 값을 순서대로 모은다</h3>
+<p>숫자 0 부터 시작 ( Why?: index 로 번호를 세는데 0부터 시작이여서)
+키워드 : [ ] (대괄호)</p>
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. let (이름) : Array&lt;Type&gt; : [값들]
+2. let (이름) = [값들]
+
+3. var (이름) : Array&lt;Type&gt; : [값들]
+4. var (이름) = [값들]
+</code></pre></div></div>
+<ul>
+  <li>ex)
+``` 
+상수 배열
+    <ol>
+      <li>let name : Array<String> =  [["Bean", "Kim", "Jack", "Joker"]]
+1-1. let name: [String] = ["Bean", "Kim", "Jack", "Joker"]</String></li>
+    </ol>
+  </li>
+</ul>
+
+<p>변수 배열</p>
+<ol>
+  <li>var name2 : Array<String>  = ["Bean", "Kim", "Jack", "Joker"]
+2-1. var name2 : [String] = ["Bean", "Kim", "Jack", "Joker"]
+2-2. var name = [""]  
+```</String></li>
+</ol>
+
+<p>상수 배열은 값을 추가 x 
+변수 배열은 값을 추가 ㅇ</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>변수 배열 값 추가 방밥!
+1.  let name : Array&lt;String&gt; =  ["Bean", "Kim", "Jack", "Joker"]
+1-1. let name = ["Bean", "Kim", "Jack", "Joker"]
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker"] 
+---
+name.append("Luppy")
+name.append("Messy")
+name.append("Ryon")
+name.append("Son")
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker", "Luppy", "Messy", "Ryon", "Son"] 
+---
+</code></pre></div></div>
+
+<h3 id="dictionary--순서없이-key키와-value값이-한-쌍으로-저장">Dictionary : 순서없이 Key(키)와 Value(값)이 한 쌍으로 저장</h3>
+
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["String 값": Int 값, ... ]
+ 1-1. var nameAndAge = ["String 값": Int 값, ... ]
+ print(nameAndAge)
+ 
+</code></pre></div></div>
+<ul>
+  <li>ex)
+ ```
+    <ol>
+      <li>var nameAndAge: [String: Int] = [“Bean”: 20, “Kim”: 19, “Jack”: 4, “Joker”: 38]
+ var nameAndAge = [“Bean”: 20, “Kim”: 19, “Jack”: 4, “Joker”: 38]
+ print(nameAndAge)</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+<p>결과 : [“Bean”: 20, “Jack”: 4, “Joker”: 38, “Kim”: 19]
+ —</p>
+
+<p>var nameAndAge = [“Bean”: 20, “Kim”: 19, “Jack”: 4, “Joker”: 38]
+ print(nameAndAge)</p>
+
+<p>nameAndAge[“Luppy”] = 18
+ nameAndAge[“Messy”] = 32
+ nameAndAge[“Ryon”] = 10
+ nameAndAge[“Son”] = 30</p>
+
+<p>print(nameAndAge)</p>
+
+<hr />
+<p>결과 : [“Messy”: 32, “Ryon”: 10, “Son”: 30, “Jack”: 4, “Joker”: 38, “Bean”: 20, “Luppy”: 18, “Kim”: 19]
+—</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+###  Set : 같은 데이터 타입의 값을 순서 없이 저장
+</code></pre></div></div>
+<ol>
+  <li>상수는 변경이 되지 않아 값 변경을 할 수 없음</li>
+  <li>변수는 변경이 가능 해 값을 변경 할 수 있어 나중에 값을 넣어도 됨
+ ```</li>
+</ol>
+
+:ET

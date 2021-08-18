@@ -1,0 +1,163 @@
+I"U<h2 id="데이터들의-집합-모음">데이터들의 집합 모음</h2>
+
+<h3 id="array--데이터-타입의-값을-순서대로-저장">Array : 데이터 타입의 값을 순서대로 저장</h3>
+<p>숫자 0 부터 시작 ( Why?: index 로 번호를 세는데 0부터 시작이여서) <br />
+키워드 : [ ] (대괄호)</p>
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. let (이름) : Array&lt;Type&gt; = [값들]
+2. let (이름) = [값들]
+
+3. var (이름) : Array&lt;Type&gt; = [값들]
+4. var (이름) = [값들]
+</code></pre></div></div>
+<ul>
+  <li>ex)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>상수 배열
+1.  let name : Array&lt;String&gt; =  [["Bean", "Kim", "Jack", "Joker"]]
+1-1. let name: [String] = ["Bean", "Kim", "Jack", "Joker"]
+
+
+
+변수 배열
+2.  var name2 : Array&lt;String&gt;  = ["Bean", "Kim", "Jack", "Joker"]
+2-1. var name2 : [String] = ["Bean", "Kim", "Jack", "Joker"]
+2-2. var name = [""]  
+</code></pre></div></div>
+
+<h4 id="추가-방법-">추가 방법! <br /></h4>
+<p>상수 배열은 값을 추가 x  <br /> 
+변수 배열은 값을 추가 ㅇ</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  let name : Array&lt;String&gt; =  ["Bean", "Kim", "Jack", "Joker"]
+1-1. let name = ["Bean", "Kim", "Jack", "Joker"]
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker"] 
+---
+name.append("Luppy")
+name.append("Messy")
+name.append("Ryon")
+name.append("Son")
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker", "Luppy", "Messy", "Ryon", "Son"]
+차례대로 저장당함 
+---
+
+--- insert 키위드를 이용 --- 
+let name : Array&lt;String&gt; =  ["Bean", "Kim", "Jack", "Joker"]
+name.insert("Rosa", at: 1) // 1번 인덱스에 로사 추가
+print(name)
+---
+결과 : ["Bean", "Rosa", "Kim", "Jack", "Joker"]
+index    0       1       2      3        4
+---
+
+</code></pre></div></div>
+<h4 id="일부-삭제-방법-">일부 삭제 방법 :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var name : Array&lt;String&gt; =  ["Bean", "Rosa", "Kim", "Jack", "Joker"]
+name.remove(at: 1)
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker"]
+---
+</code></pre></div></div>
+
+<h3 id="dictionary--순서없이-key키와-value값이-한-쌍으로-저장">Dictionary : 순서없이 Key(키)와 Value(값)이 한 쌍으로 저장</h3>
+<p>상수는 추가가 되지 않아서 변수로만 선언</p>
+
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["String 값": Int 값, ... ]
+ 1-1. var nameAndAge = ["String 값": Int 값, ... ]
+ 
+</code></pre></div></div>
+<ul>
+  <li>ex)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+ var nameAndAge = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+ print(nameAndAge)
+ 
+ --- 
+ 결과 : ["Bean": 20, "Jack": 4, "Joker": 38, "Kim": 19]
+ ---
+</code></pre></div></div>
+<h4 id="추가방법-">추가방법 :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+ 1-1. var nameAndAge = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+
+ nameAndAge["Luppy"] = 18
+ nameAndAge["Messy"] = 32
+ nameAndAge["Ryon"] = 10
+ nameAndAge["Son"] = 30
+
+ print(nameAndAge)
+
+--- 
+결과 : ["Messy": 32, "Ryon": 10, "Son": 30, "Jack": 4, "Joker": 38, "Bean": 20, "Luppy": 18, "Kim": 19]
+
+*** 순서 상관없이 추가 됨 ***
+---
+</code></pre></div></div>
+<h4 id="일부-삭제-방법--1">일부 삭제 방법 :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> var nameAndAge =  ["Messy": 32, "Ryon": 10, "Son": 30, "Jack": 4, "Joker": 38, "Bean": 20, "Luppy": 18, "Kim": 19]
+ 
+ nameAndAge.removeValue(forKey: "Joker")
+ 
+ ---
+ 결과 : ["Messy": 32, "Son": 30, "Jack": 4, "Kim": 19, "Luppy": 18, "Ryon": 10, "Bean": 20]
+ ---
+
+</code></pre></div></div>
+
+<h3 id="set--같은-데이터-타입의-값을-순서-없이-저장">Set : 같은 데이터 타입의 값을 순서 없이 저장</h3>
+<p>데이터 중복을 허락하지 않는 특징이 있음</p>
+
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var (이름) : set = Set&lt;Type&gt;()  // 축약형 없음
+
+
+</code></pre></div></div>
+<ul>
+  <li>ex)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var name: Set = Set&lt;String&gt;()
+name.insert("Bean")
+name.insert("Rosa")
+name.insert("Jack")
+name.insert("Bean")
+name.insert("Messi")
+print(name)
+---
+결과: ["Rosa", "Messi", "Bean", "Jack"]
+*** Bean을 두번 추가하였으나 한번 밖에 저장되지 않음 *** 
+---
+</code></pre></div></div>
+
+<h4 id="삭제방법">삭제방법:</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name.remove("Bean")
+print(name)
+---
+결과: ["Rosa", "Jack", "Messi"]
+---
+
+</code></pre></div></div>
+
+:ET

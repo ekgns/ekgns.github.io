@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>변수&amp;상수  - 콩 농장</title>
-<meta name="description" content="상수 : 고정 된 수    사용방법 :     1. let (이름) : &lt;Type&gt; : 값 2. let (이름) = 값           ex)     1.  let name : String =  Bean (상수) (상수이름) : &lt;타입&gt; =  값 2.  let name2  = Bean (상수) (상수이름) = 값">
+<!-- begin _includes/seo.html --><title>콜렉션 타입  - 콩 농장</title>
+<meta name="description" content="데이터들의 집합 모음">
 
 
   <meta name="author" content="Bean">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="콩 농장">
-<meta property="og:title" content="변수&amp;상수">
-<meta property="og:url" content="/swift/let&var/">
+<meta property="og:title" content="콜렉션 타입">
+<meta property="og:url" content="/swift/CollectionType/">
 
 
-  <meta property="og:description" content="상수 : 고정 된 수    사용방법 :     1. let (이름) : &lt;Type&gt; : 값 2. let (이름) = 값           ex)     1.  let name : String =  Bean (상수) (상수이름) : &lt;타입&gt; =  값 2.  let name2  = Bean (상수) (상수이름) = 값">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-08-16T00:00:00+09:00">
+  <meta property="og:description" content="데이터들의 집합 모음">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2021-08-18T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="/swift/let&var/">
+
+<link rel="canonical" href="/swift/CollectionType/">
 
 
 
@@ -288,16 +288,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="변수&amp;상수">
-    <meta itemprop="description" content="상수 : 고정 된 수  사용방법 :    1. let (이름) : &lt;Type&gt; : 값2. let (이름) = 값        ex)    1.  let name : String =  Bean(상수) (상수이름) : &lt;타입&gt; =  값2.  let name2  = Bean(상수) (상수이름) = 값      ">
-    <meta itemprop="datePublished" content="2021-08-16T00:00:00+09:00">
+    <meta itemprop="headline" content="콜렉션 타입">
+    <meta itemprop="description" content="데이터들의 집합 모음">
+    <meta itemprop="datePublished" content="2021-08-18T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="/swift/let&var/" class="u-url" itemprop="url">변수&amp;상수
+            <a href="/swift/CollectionType/" class="u-url" itemprop="url">콜렉션 타입
 </a>
           </h1>
           
@@ -314,7 +314,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          2 분 소요
         
       </span>
     
@@ -326,46 +326,167 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h3 id="상수--고정-된-수">상수 : 고정 된 수</h3>
+        <h2 id="데이터들의-집합-모음">데이터들의 집합 모음</h2>
+
+<h3 id="array--데이터-타입의-값을-순서대로-저장">Array : 데이터 타입의 값을 순서대로 저장</h3>
+<p>숫자 0 부터 시작 ( Why?: index 로 번호를 세는데 0부터 시작이여서) <br />
+키워드 : [ ] (대괄호)</p>
 <ul>
-  <li>사용방법 :
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. let (이름) : &lt;Type&gt; : 값
-2. let (이름) = 값
-</code></pre></div>    </div>
-  </li>
-  <li>ex)
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  let name : String =  Bean
-(상수) (상수이름) : &lt;타입&gt; =  값
-2.  let name2  = Bean
-(상수) (상수이름) = 값
-</code></pre></div>    </div>
-  </li>
+  <li>사용방법 :</li>
 </ul>
 
-<h3 id="변수--변화가-가능한-수">변수 : 변화가 가능한 수</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. let (이름) : Array&lt;Type&gt; = [값들]
+2. let (이름) = [값들]
+
+3. var (이름) : Array&lt;Type&gt; = [값들]
+4. var (이름) = [값들]
+</code></pre></div></div>
 <ul>
-  <li>
-    <p>사용방법 : var (이름) : <Type> : 값</Type></p>
-  </li>
-  <li>사용방법 :
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var (이름) : &lt;Type&gt; : 값
- 2. var (이름) = 값
-</code></pre></div>    </div>
-  </li>
-  <li>ex)
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  var name : String =  Bean
- (변수) (변수이름) : &lt;타입&gt; =  값
-2.  var name2  = Bean
- (변수) (변수이름) = 값
-</code></pre></div>    </div>
-  </li>
+  <li>ex)</li>
 </ul>
 
-<h3 id="차이점">차이점</h3>
-<ol>
-  <li>상수는 변경이 되지 않아 값 변경을 할 수 없음</li>
-  <li>변수는 변경이 가능 해 값을 변경 할 수 있어 나중에 값을 넣어도 됨</li>
-</ol>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>상수 배열
+1.  let name : Array&lt;String&gt; =  [["Bean", "Kim", "Jack", "Joker"]]
+1-1. let name: [String] = ["Bean", "Kim", "Jack", "Joker"]
+
+
+
+변수 배열
+2.  var name2 : Array&lt;String&gt;  = ["Bean", "Kim", "Jack", "Joker"]
+2-1. var name2 : [String] = ["Bean", "Kim", "Jack", "Joker"]
+2-2. var name = [""]  
+</code></pre></div></div>
+
+<h4 id="추가-방법-">추가 방법! <br /></h4>
+<p>상수 배열은 값을 추가 x  <br /> 
+변수 배열은 값을 추가 ㅇ</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  let name : Array&lt;String&gt; =  ["Bean", "Kim", "Jack", "Joker"]
+1-1. let name = ["Bean", "Kim", "Jack", "Joker"]
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker"] 
+---
+name.append("Luppy")
+name.append("Messy")
+name.append("Ryon")
+name.append("Son")
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker", "Luppy", "Messy", "Ryon", "Son"]
+차례대로 저장당함 
+---
+
+--- insert 키위드를 이용 --- 
+let name : Array&lt;String&gt; =  ["Bean", "Kim", "Jack", "Joker"]
+name.insert("Rosa", at: 1) // 1번 인덱스에 로사 추가
+print(name)
+---
+결과 : ["Bean", "Rosa", "Kim", "Jack", "Joker"]
+index    0       1       2      3        4
+---
+
+</code></pre></div></div>
+<h4 id="일부-삭제-방법-">일부 삭제 방법 :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var name : Array&lt;String&gt; =  ["Bean", "Rosa", "Kim", "Jack", "Joker"]
+name.remove(at: 1)
+print(name)
+---
+결과 : ["Bean", "Kim", "Jack", "Joker"]
+---
+</code></pre></div></div>
+
+<h3 id="dictionary--순서없이-key키와-value값이-한-쌍으로-저장">Dictionary : 순서없이 Key(키)와 Value(값)이 한 쌍으로 저장</h3>
+<p>상수는 추가가 되지 않아서 변수로만 선언</p>
+
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["String 값": Int 값, ... ]
+ 1-1. var nameAndAge = ["String 값": Int 값, ... ]
+ 
+</code></pre></div></div>
+<ul>
+  <li>ex)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+ var nameAndAge = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+ print(nameAndAge)
+ 
+ --- 
+ 결과 : ["Bean": 20, "Jack": 4, "Joker": 38, "Kim": 19]
+ ---
+</code></pre></div></div>
+<h4 id="추가방법-">추가방법 :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. var nameAndAge: [String: Int] = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+ 1-1. var nameAndAge = ["Bean": 20, "Kim": 19, "Jack": 4, "Joker": 38]
+
+ nameAndAge["Luppy"] = 18
+ nameAndAge["Messy"] = 32
+ nameAndAge["Ryon"] = 10
+ nameAndAge["Son"] = 30
+
+ print(nameAndAge)
+
+--- 
+결과 : ["Messy": 32, "Ryon": 10, "Son": 30, "Jack": 4, "Joker": 38, "Bean": 20, "Luppy": 18, "Kim": 19]
+
+*** 순서 상관없이 추가 됨 ***
+---
+</code></pre></div></div>
+<h4 id="일부-삭제-방법--1">일부 삭제 방법 :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> var nameAndAge =  ["Messy": 32, "Ryon": 10, "Son": 30, "Jack": 4, "Joker": 38, "Bean": 20, "Luppy": 18, "Kim": 19]
+ 
+ nameAndAge.removeValue(forKey: "Joker")
+ 
+ ---
+ 결과 : ["Messy": 32, "Son": 30, "Jack": 4, "Kim": 19, "Luppy": 18, "Ryon": 10, "Bean": 20]
+ ---
+
+</code></pre></div></div>
+
+<h3 id="set--같은-데이터-타입의-값을-순서-없이-저장">Set : 같은 데이터 타입의 값을 순서 없이 저장</h3>
+<p>데이터 중복을 허락하지 않는 특징이 있음</p>
+
+<ul>
+  <li>사용방법 :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var (이름) : set = Set&lt;Type&gt;()  // 축약형 없음
+
+
+</code></pre></div></div>
+<ul>
+  <li>ex)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var name: Set = Set&lt;String&gt;()
+name.insert("Bean")
+name.insert("Rosa")
+name.insert("Jack")
+name.insert("Bean")
+name.insert("Messi")
+print(name)
+---
+결과: ["Rosa", "Messi", "Bean", "Jack"]
+*** Bean을 두번 추가하였으나 한번 밖에 저장되지 않음 *** 
+---
+</code></pre></div></div>
+
+<h4 id="삭제방법">삭제방법:</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name.remove("Bean")
+print(name)
+---
+결과: ["Rosa", "Jack", "Messi"]
+---
+
+</code></pre></div></div>
 
 
         
@@ -408,7 +529,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-16T00:00:00+09:00">August 16, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-18T00:00:00+09:00">August 18, 2021</time></p>
 
       </footer>
 
@@ -417,22 +538,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%EB%B3%80%EC%88%98%26%EC%83%81%EC%88%98+%20%2Fswift%2Flet%26var%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%EC%BD%9C%EB%A0%89%EC%85%98+%ED%83%80%EC%9E%85+%20%2Fswift%2FCollectionType%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fswift%2Flet%26var%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fswift%2FCollectionType%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fswift%2Flet%26var%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fswift%2FCollectionType%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">이전</a>
+      <a href="/swift/let&var/" class="pagination--pager" title="변수&amp;상수
+">이전</a>
     
     
-      <a href="/swift/CollectionType/" class="pagination--pager" title="콜렉션 타입
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -456,7 +577,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/swift/CollectionType/" rel="permalink">콜렉션 타입
+        <a href="/swift/let&var/" rel="permalink">변수&amp;상수
 </a>
       
     </h2>
@@ -474,15 +595,24 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 분 소요
+          최대 1 분 소요
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">데이터들의 집합 모음
-</p>
+    <p class="archive__item-excerpt" itemprop="description">상수 : 고정 된 수
+
+  사용방법 :
+    1. let (이름) : &lt;Type&gt; : 값
+2. let (이름) = 값
+    
+  
+  ex)
+    1.  let name : String =  Bean
+(상수) (상수이름) : &lt;타입&gt; =  값
+2.  le...</p>
   </article>
 </div>
 
