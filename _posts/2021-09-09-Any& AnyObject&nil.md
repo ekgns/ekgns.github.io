@@ -12,6 +12,8 @@ tags:
 But  Any 타입에 넣은 데이터를 내가 원하는 데이터의 타입으로 할당 할 수 는 없다!!!
 
 - ex) 
+
+
 ```
 var any: Any = 100
 var i: Int = any
@@ -27,6 +29,8 @@ var amuObject: AnyObject = amu()
 그래서 값을 없다고 표시를 해줄거나 비어있는 데이터의를 만들때 사용한다.
 
 - ex)
+
+
 ```
 let a:Int = 0
 let b:String = "" 
